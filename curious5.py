@@ -20,9 +20,9 @@ for i in range( len(li) ):
 
 	# Test whether each sequence in the space is "curious"
 	# A sequence is curious when the number of times a value occurs in a sequence (the left side) = the value at that particular index (the right side)
-	# from this, to generalize up, keep add li[i].count()s to the left-hand side.
+	# from this, to generalize up, add more li[i].count()s to the left-hand side.
 	if tuple([li[i].count(0), li[i].count(1), li[i].count(2), li[i].count(3), li[i].count(4) ]) == tuple(li[i]):
 		
-		# if the chosen sequence is curious, print it.
+		# print any curious sequence (if any--solutions not guaranteed for arbitrary 'n')
 		print li[i]
 
